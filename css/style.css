@@ -1,0 +1,73 @@
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+margin: 0;
+}
+
+.hero {
+background: url(../img/back.jpg);
+min-height: 100vh;
+min-width: 100vw;
+margin: 0 auto;
+}
+
+.logo {
+display: inline-block;
+margin-top: 20px;
+}
+
+.logo__link {
+width: 5%;
+}
+
+.logo__pic {
+width: 5%;
+}
+
+.flex {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.desc {
+width: 600px;
+text-align: center;
+
+}
+
+.desc__title {
+font-size: 300px;
+margin-top: 100px;
+display: flex;
+margin-left: 200px;
+font-family: "Sedan SC", serif;
+font-weight: 400;
+font-style: normal;
+color: rgb(207, 193, 130);
+}
+
+.desc__text {
+font-size: 23px;
+margin-left: 50px;
+font-family: "Red Hat Display", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+color: rgb(255, 251, 239);
+}
+
+.hero__image {
+display: flex;
+margin-top: 200px;
+z-index: 1;
+background-color: rgba(255, 255, 255, 0.808);
+border-radius: 50%;
+}
+
+
+
+
