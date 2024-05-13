@@ -17,6 +17,9 @@ margin: 0 auto;
 .logo {
 display: inline-block;
 margin-top: 20px;
+animation-name: logo;
+animation-duration: 0.4s;
+animation-fill-mode: forwards;
 }
 
 .logo__link {
@@ -36,7 +39,6 @@ justify-content: space-between;
 .desc {
 width: 600px;
 text-align: center;
-
 }
 
 .desc__title {
@@ -48,6 +50,9 @@ font-family: "Sedan SC", serif;
 font-weight: 400;
 font-style: normal;
 color: rgb(207, 193, 130);
+animation-name: desc__title;
+animation-duration: 1.5s;
+animation-fill-mode: forwards;
 }
 
 .desc__text {
@@ -58,6 +63,9 @@ font-optical-sizing: auto;
 font-weight: 300;
 font-style: normal;
 color: rgb(255, 251, 239);
+animation-name: desc__text;
+animation-duration: 0.6s;
+animation-fill-mode: forwards;
 }
 
 .hero__image {
@@ -66,8 +74,57 @@ margin-top: 200px;
 z-index: 1;
 background-color: rgba(255, 255, 255, 0.808);
 border-radius: 50%;
+animation-name: arteon;
+animation-duration: 0.8s;
+animation-fill-mode: forwards;
+}
+
+@keyframes arteon {
+from {
+margin-left: 50%;
+width: 200%;
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+
+@keyframes desc__text {
+from {
+margin-top: 500px;
+color: black;
+}
+
+to {
+margin-top: 0px;
+color: white;
+}
 }
 
 
+@keyframes desc__title {
+from {
+color: rgb(255, 251, 239);
+margin-left: 100%;
+width: 200%;
+}
 
+to {
+color: rgb(202, 186, 154);
+margin-left: 30%;
+width: 100%;
+}
+}
+
+@keyframes logo {
+from {
+margin-top: 80px;
+}
+
+to {
+margin-top: 20px;
+}
+}
 
