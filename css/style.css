@@ -12,6 +12,7 @@ background: url(../img/back.jpg);
 min-height: 100vh;
 min-width: 100vw;
 margin: 0 auto;
+overflow-x: hidden;
 }
 
 .logo {
@@ -128,3 +129,29 @@ margin-top: 20px;
 }
 }
 
+
+@media (min-width: 990px) {
+.aside {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    order: 1;
+}
+
+.main {
+
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+    order: 2;
+}
+}
+
+@media (min-width: 1400px) {
+.aside {
+    flex: 0 0 25%;
+}
+
+.main {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+}
